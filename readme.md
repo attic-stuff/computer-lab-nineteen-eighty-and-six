@@ -30,7 +30,7 @@ this shader makes an assumption that your application surface is scaled higher t
 - this thing works best for low resolution jraphics. it is meant to give you the old timey feels so if you apply it to something new timey it will probably look like not good
 - there is actually a debug function in there, if you call `computer_lab_nineteen_eighty_and_six_debug(true)`, that will bring up a debug window where you can play with the parameters of things and fine tune it to do whatever you want. however you will need to write those things down and change them in the `computer_lab_nineteen_eighty_and_six()` function cause they are all static variables.
 - this shader makes and reuses two surfaces to do cool shit, keep that in mind when you are looking for batch break and texture swap boogiemen
-- this is the end of this project! i made it for a game that is no longer in production 
+- this is the end of this project! i made it for a game that is no longer in production. the reason the uniform values are baked at a specific value and the reason everything seems really static is because it was never meant to be public. yet here we are! you will have to adjust and tune and fix this on your own tho
 
 ## before & after
 ![shows a cool picture before the filter](https://github.com/attic-stuff/computer-lab-nineteen-eighty-and-six/blob/master/without.png)
