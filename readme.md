@@ -1,7 +1,7 @@
 # computer lab nineteen eighty and six
 
 ## a cool pp shader!
-this is a shader and it is a post processing shader and its for pretending your game was released a long time ago before sonic was invented. it is _not_ a crt shader, it is _not_ period-piece-drama-accurate and it is not meant to be any kind of emulated or recreated thing. it is just an artistic expression of what it felt like to look at a terminal when i was a young boy and perhaps the damn wall was still up.
+this is a shader and it is a post processing shader and its for pretending your game was released a long time ago before sonic was invented. it is _not_ a crt shader, it is _not_ period-piece-drama-accurate and it is not meant to be any kind of emulated or recreated thing. it is just an artistic expression of what it felt like to look at a terminal when i was a young boy and perhaps the damned wall was still up.
 
 ## how to work it
 well basically you import the package and just call `computer_lab_nineteen_eighty_and_six()` in the post draw event, and then draw the application surface. you will need to do all the regular things for a pp effect such as disabling blending and making sure the the thing is drawn stretched or scaled or whatever you need.
