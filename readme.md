@@ -4,7 +4,20 @@
 this is a shader and it is a post processing shader and its for pretending your game was released a long time ago before sonic was invented. it is _not_ a crt shader, it is _not_ period-piece-drama-accurate and it is not meant to be any kind of emulated or recreated thing. it is just an artistic expression of what it felt like to look at a terminal when i was a young boy and perhaps the wall was still up.
 
 ## how to work it
-well basically you just call `computer_lab_nineteen_eighty_and_six()` in the post draw event, and then draw the application surface. you will need to do all the regular things for a pp effect such as disabling blending and making sure the the thing is drawn stretched or scaled or whatever you need.
+well basically you import the package and just call `computer_lab_nineteen_eighty_and_six()` in the post draw event, and then draw the application surface. you will need to do all the regular things for a pp effect such as disabling blending and making sure the the thing is drawn stretched or scaled or whatever you need.
+
+```gml
+/* CREATE EVENT */
+application_surface_draw_enable(false);
+
+/* POST DRAW EVENT */
+
+computer_lab_nineteen_eighty_and_six();
+
+gpu_set_blendenable(false);
+draw_surface(application_surface, 0, 0, width, height);
+gpu_set_blendenable(true);
+```
 
 ## how it works
 it does several passes that include some color bleeding, which is a chromatic abberation that gets blurred, as well as a regular chromatic abberation which just does a regular non blurred thing. then some noise and a horizontal scanline are thrown in the mix. its all very uncomplex.
